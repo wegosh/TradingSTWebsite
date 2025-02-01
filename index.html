@@ -4,52 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trading Journal App</title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png"/>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .main-content {
+            flex: 1;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
 
     <!-- Navbar -->
     <nav class="bg-white shadow-md p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold">Trading Journal</a>
-            <div>
+            <a href="index.html" class="text-2xl font-bold flex items-center">
+                <img src="./assets/images/w_500.png" alt="Trading St. logo" style="height:100px;">
+            </a>
+            <!-- <div>
                 <a href="features.html" class="mx-4 text-gray-700 hover:text-blue-500">Features</a>
                 <a href="about.html" class="mx-4 text-gray-700 hover:text-blue-500">About</a>
                 <a href="contact.html" class="mx-4 text-gray-700 hover:text-blue-500">Contact</a>
-            </div>
+            </div> -->
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="bg-blue-500 text-white text-center py-20">
-        <h1 class="text-4xl font-bold">The Best Crypto Trading Journal</h1>
-        <p class="mt-4 text-lg">Track, analyze, and improve your trades with ease.</p>
-        <a href="#" class="mt-6 inline-block bg-white text-blue-500 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">Download Now</a>
-    </header>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Hero Section -->
+        <header class="bg-blue-500 text-white text-center py-20">
+            <div class="flex justify-center items-center mb-6">
+                <span class="text-4xl font-bold text-gray-200">trading</span>
+                <span class="text-4xl font-bold text-white">St.</span>
+            </div>
+            <h1 class="text-4xl font-bold">The best trading journal - Trading St.</h1>
+            <p class="mt-4 text-lg">Track, analyze, and improve your trades with ease.</p>
+            <a href="#" class="mt-6 inline-block bg-white text-blue-500 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">Download Now</a>
+        </header>
 
-    <!-- Features Section -->
-    <section class="container mx-auto py-16 px-4">
-        <h2 class="text-3xl font-bold text-center">Key Features</h2>
-        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white shadow-md p-6 rounded-lg">
-                <h3 class="text-xl font-semibold">Trade Tracking</h3>
-                <p class="mt-2 text-gray-600">Log every trade with important details.</p>
+        <!-- Features Section -->
+        <section class="container mx-auto py-16 px-4">
+            <h2 class="text-3xl font-bold text-center">Key Features</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Trade Tracking</h3>
+                    <p class="mt-2 text-gray-600">Log every trade with important details.</p>
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">PnL Analytics</h3>
+                    <p class="mt-2 text-gray-600">Monitor your profits & losses in real-time.</p>
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Tagging System</h3>
+                    <p class="mt-2 text-gray-600">Categorize trades for better insights.</p>
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">More...</h3>
+                    <p class="mt-2 text-gray-600">More features coming up!</p>
+                </div>
             </div>
-            <div class="bg-white shadow-md p-6 rounded-lg">
-                <h3 class="text-xl font-semibold">PnL Analytics</h3>
-                <p class="mt-2 text-gray-600">Monitor your profits & losses in real-time.</p>
+        </section>
+
+        <!-- Important Information Section -->
+        <section class="bg-gray-50 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center">Why Choose Trading St.?</h2>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white shadow-md p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold">Easy to Use</h3>
+                        <p class="mt-2 text-gray-600">Our intuitive interface makes tracking trades simple and efficient.</p>
+                    </div>
+                    <div class="bg-white shadow-md p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold">Native application</h3>
+                        <p class="mt-2 text-gray-600">Native mac OS application.</p>
+                    </div>
+                    <div class="bg-white shadow-md p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold">Free</h3>
+                        <p class="mt-2 text-gray-600">Trading St. is a free application.</p>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white shadow-md p-6 rounded-lg">
-                <h3 class="text-xl font-semibold">Tagging System</h3>
-                <p class="mt-2 text-gray-600">Categorize trades for better insights.</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center p-4">
-        <p>&copy; 2025 Trading Journal. All Rights Reserved.</p>
-        <a href="privacy.html" class="text-gray-400 hover:text-gray-200">Privacy Policy</a>
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-xl font-bold">About Trading St.</h3>
+                    <p class="mt-2 text-gray-400">Trading St. is the ultimate trading journal app designed to help traders track, analyze, and improve their performance.</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold">Quick Links</h3>
+                    <ul class="mt-2 text-gray-400">
+                        <li><a href="features.html" class="hover:text-gray-200">Features</a></li>
+                        <li><a href="about.html" class="hover:text-gray-200">About</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-200">Contact</a></li>
+                        <li><a href="privacy.html" class="hover:text-gray-200">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl font-bold">Contact Us</h3>
+                    <ul class="mt-2 text-gray-400">
+                        <li>Email: <a href="mailto:support@tradingst.com" class="hover:text-gray-200">xxx@xxx.com</a></li>
+                        <li>Phone: <a href="tel:+1234567890" class="hover:text-gray-200">+XXX</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400">
+                <p>&copy; 2025 Trading St. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
 
 </body>
